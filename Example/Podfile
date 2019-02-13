@@ -4,10 +4,6 @@ target 'LoginKit_Example' do
 
   pod 'ILLoginKit', :path => '../'
 
-  target 'LoginKit_Tests' do
-    inherit! :search_paths
-  end
-
 end
 
 post_install do |installer|

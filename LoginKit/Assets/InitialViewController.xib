@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="ILLoginKit" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImageView" destination="Vw0-kY-ntJ" id="DyE-sX-tL3"/>
-                <outlet property="facebookButton" destination="XPy-Cb-f1M" id="TYL-7o-sMQ"/>
                 <outlet property="loginButton" destination="B7r-wF-hG2" id="gSl-LL-Kj1"/>
                 <outlet property="logoImageView" destination="wTd-tf-f9d" id="Bwx-F5-wtj"/>
                 <outlet property="signupButton" destination="9Xa-q7-7Ju" id="kmm-zj-21i"/>
@@ -106,9 +105,6 @@
                                     <integer key="value" value="25"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="didSelectFacebook:" destination="-1" eventType="touchUpInside" id="TqY-aa-Jaj"/>
-                            </connections>
                         </button>
                     </subviews>
                 </stackView>

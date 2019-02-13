@@ -1,16 +1,5 @@
 PODS:
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - FBSDKCoreKit (4.32.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.31.0):
-    - FBSDKCoreKit
   - ILLoginKit (1.0.1):
-    - FBSDKLoginKit (= 4.31.0)
     - Validator (= 3.0.2)
   - Validator (3.0.2)
 
@@ -19,9 +8,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Bolts
-    - FBSDKCoreKit
-    - FBSDKLoginKit
     - Validator
 
 EXTERNAL SOURCES:
@@ -29,12 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  FBSDKCoreKit: 55d7f2ac45d9c4b9b6119f4e43900fe84b9b7b1b
-  FBSDKLoginKit: 95a252ddffd6919c0f132a02292f0824616d8709
-  ILLoginKit: 715f771ecbf38f7e031ebede6d0138de84cd73c8
+  ILLoginKit: b3ad1e35f0b21cbf9da02358af9a8a4e0d28c53c
   Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
 
-PODFILE CHECKSUM: 122b20bb1eac42606ddc06e4bca9a845d06723fd
+PODFILE CHECKSUM: 5ec807e4b44832a109c4f1f9a9e080578d2e0113
 
 COCOAPODS: 1.5.3

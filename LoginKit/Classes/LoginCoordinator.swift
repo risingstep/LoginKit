@@ -20,7 +20,7 @@ public protocol ConfigurationSource {
 
     var signupButtonText: String { get }
     var loginButtonText: String { get }
-    var facebookButtonText: String { get }
+//    var facebookButtonText: String { get }
     var forgotPasswordButtonText: String { get }
     var recoverPasswordButtonText: String { get }
 
@@ -48,7 +48,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 
 	public var signupButtonText: String
 	public var loginButtonText: String
-	public var facebookButtonText: String
+//    public var facebookButtonText: String
 	public var forgotPasswordButtonText: String
 	public var recoverPasswordButtonText: String
 
@@ -70,7 +70,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 		 errorTintColor: UIColor = UIColor(red: 241 / 255, green: 196 / 255 , blue: 15 / 255, alpha: 1),
 		 signupButtonText: String = "Sign Up",
 		 loginButtonText: String = "Log In",
-		 facebookButtonText: String = "Enter with Facebook",
+//         facebookButtonText: String = "Enter with Facebook",
 		 forgotPasswordButtonText: String = "Forgot Password",
 		 recoverPasswordButtonText: String = "Recover Password",
 		 emailPlaceholder: String = "Email",
@@ -89,7 +89,7 @@ public struct DefaultConfiguration: ConfigurationSource {
 		self.errorTintColor = errorTintColor
 		self.signupButtonText = signupButtonText
 		self.loginButtonText = loginButtonText
-		self.facebookButtonText = facebookButtonText
+//        self.facebookButtonText = facebookButtonText
 		self.forgotPasswordButtonText = forgotPasswordButtonText
 		self.recoverPasswordButtonText = recoverPasswordButtonText
 		self.emailPlaceholder = emailPlaceholder
@@ -174,7 +174,7 @@ open class LoginCoordinator {
 
     // MARK: Services
 
-    public lazy var facebookService = FacebookService()
+//    public lazy var facebookService = FacebookService()
 
     // MARK: - LoginCoordinator
 
@@ -223,9 +223,9 @@ open class LoginCoordinator {
         print("Implement this method in your subclass to handle signup.")
     }
 
-    open func enterWithFacebook(profile: FacebookProfile) {
-        print("Implement this method in your subclass to handle facebook.")
-    }
+//    open func enterWithFacebook(profile: FacebookProfile) {
+//        print("Implement this method in your subclass to handle facebook.")
+//    }
 
     open func recoverPassword(email: String) {
         print("Implement this method in your subclass to handle password recovery.")
@@ -267,16 +267,16 @@ extension LoginCoordinator: InitialViewControllerDelegate {
         goToSignup()
     }
 
-    func didSelectFacebook(_ viewController: UIViewController) {
-        facebookService.login(from: viewController) { (result) in
-            switch result {
-            case .success(let profile):
-                self.enterWithFacebook(profile: profile)
-            default:
-                break
-            }
-        }
-    }
+//    func didSelectFacebook(_ viewController: UIViewController) {
+//        facebookService.login(from: viewController) { (result) in
+//            switch result {
+//            case .success(let profile):
+//                self.enterWithFacebook(profile: profile)
+//            default:
+//                break
+//            }
+//        }
+//    }
 
 }
 

@@ -12,7 +12,7 @@ protocol InitialViewControllerDelegate: class {
 
     func didSelectSignup(_ viewController: UIViewController)
     func didSelectLogin(_ viewController: UIViewController)
-    func didSelectFacebook(_ viewController: UIViewController)
+//    func didSelectFacebook(_ viewController: UIViewController)
 
 }
 
@@ -38,7 +38,7 @@ class InitialViewController: UIViewController, BackgroundMovable {
     @IBOutlet weak var backgroundImageView: GradientImageView!
     @IBOutlet weak var signupButton: Buttn!
     @IBOutlet weak var loginButton: Buttn!
-    @IBOutlet weak var facebookButton: UIButton!
+//    @IBOutlet weak var facebookButton: UIButton!
 
     // MARK: - UIViewController
 
@@ -92,24 +92,24 @@ class InitialViewController: UIViewController, BackgroundMovable {
 			loginButton.isHidden = true
 		}
 
-		if configuration.shouldShowFacebookButton {
-			facebookButton.setTitle(configuration.facebookButtonText, for: .normal)
-		} else {
-			facebookButton.isHidden = true
-		}
+//        if configuration.shouldShowFacebookButton {
+//            facebookButton.setTitle(configuration.facebookButtonText, for: .normal)
+//        } else {
+//            facebookButton.isHidden = true
+//        }
     }
 
     func setupFonts() {
         loginButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
         signupButton.titleLabel?.font = Font.montserratRegular.get(size: 13)
-        facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
+//        facebookButton.titleLabel?.font = Font.montserratRegular.get(size: 15)
     }
 
     func addShadows() {
-        facebookButton.layer.shadowOpacity = 0.3
-        facebookButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
-        facebookButton.layer.shadowOffset = CGSize(width: 15, height: 15)
-        facebookButton.layer.shadowRadius = 7
+//        facebookButton.layer.shadowOpacity = 0.3
+//        facebookButton.layer.shadowColor = UIColor(red: 89.0/255.0, green: 117.0/255.0, blue: 177.0/255.0, alpha: 1).cgColor
+//        facebookButton.layer.shadowOffset = CGSize(width: 15, height: 15)
+//        facebookButton.layer.shadowRadius = 7
     }
 
     // MARK: - Action's
@@ -122,9 +122,9 @@ class InitialViewController: UIViewController, BackgroundMovable {
         delegate?.didSelectLogin(self)
     }
 
-    @IBAction func didSelectFacebook(_ sender: AnyObject) {
-        delegate?.didSelectFacebook(self)
-    }
+//    @IBAction func didSelectFacebook(_ sender: AnyObject) {
+//        delegate?.didSelectFacebook(self)
+//    }
 
 }
 

@@ -34,7 +34,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
 											 errorTintColor: UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1),
 											 signupButtonText: "Create Account",
 											 loginButtonText: "Sign In",
-											 facebookButtonText: "Login with Facebook",
+//                                             facebookButtonText: "Login with Facebook",
 											 forgotPasswordButtonText: "Forgot password?",
 											 recoverPasswordButtonText: "Recover",
 											 emailPlaceholder: "E-Mail",
@@ -68,11 +68,11 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
         print("Signup with: name = \(name) email =\(email) password = \(password)")
     }
 
-    override func enterWithFacebook(profile: FacebookProfile) {
-        // Handle Facebook login/signup via your API
-        print("Login/Signup via Facebook with: FB profile =\(profile)")
-
-    }
+//    override func enterWithFacebook(profile: FacebookProfile) {
+//        // Handle Facebook login/signup via your API
+//        print("Login/Signup via Facebook with: FB profile =\(profile)")
+//
+//    }
 
     override func recoverPassword(email: String) {
         // Handle password recovery via your API
@@ -88,7 +88,7 @@ enum Settings {
 														 errorTintColor: UIColor(red: 253.0/255.0, green: 227.0/255.0, blue: 167.0/255.0, alpha: 1),
 														 signupButtonText: "Create Account",
 														 loginButtonText: "Sign In",
-														 facebookButtonText: "Login with Facebook",
+//                                                         facebookButtonText: "Login with Facebook",
 														 forgotPasswordButtonText: "Forgot password?",
 														 recoverPasswordButtonText: "Recover",
 														 emailPlaceholder: "E-Mail",

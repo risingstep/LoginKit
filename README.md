@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/ILLoginKit.svg?style=flat)](http://cocoapods.org/pods/ILLoginKit)
 [![Platform](https://img.shields.io/cocoapods/p/ILLoginKit.svg?style=flat)](http://cocoapods.org/pods/ILLoginKit)
 ![Made with Love by Icalia Labs](https://img.shields.io/badge/With%20love%20by-Icalia%20Labs-ff3434.svg)
+![Updated by Rising Step](https://img.shields.io/badge/Updated%20by:-Rising%20Step-orange.svg)
 
 ## About
 
@@ -20,6 +21,14 @@ LoginKit handles Signup & Login, via Facebook & Email. It takes care of the UI, 
 <img src="http://danielozano.com/images/1bsmall.png" width="210"><img src="http://danielozano.com/images/2bsmall.png" width="210"><img src="http://danielozano.com/images/3bsmall.png" width="210"><img src="http://danielozano.com/images/4bsmall.png" width="210">
 
 ## What's New
+
+### v.1.0.2
+
+- Removed Facebook support for now (since I'm not going to use it and it was a pain in the ass because of versioning crap)
+- Updated pods
+- Upgraded to Swift 4.21
+- Removed warnings
+
 
 ### v.1.0.0
 
